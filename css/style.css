@@ -3,11 +3,13 @@
 /* 基本設定 */
 html {
     height: 100%;
+    width: 100%;
 }
 body {
     margin: 0;
     padding: 0;
     height: 100%;
+    width: 100%;
     font-family: 'Oxygen', sans-serif;
     font-size: 17px;
     color: #333333;
@@ -16,47 +18,72 @@ body {
 }
 
 /* 枠組み */
-.page {
-    margin: 0 auto;
-    max-width: 900px;
-    min-width: 700px;
-    height: 95%;
-    min-height: 350px;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-}
-.left {
-    float: left;
-    width: 350px;
-    min-height: 350px;
-    text-align: center;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-}
-.right {
-    float: left;
-    margin: 0 5px;
-    max-width: 450px;
-    min-width: 300px;
-    min-height: 350px;
-    position: relative;
-    top: 43%;
-    transform: translateY(-50%);
-}
-footer {
-    clear: both;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-}
-.copyright {
-    clear: both;
-    font-size: 13px;
-    text-align: center;
+@media screen and (min-width: 769px) {
+    .page {
+        margin: 0 auto;
+        max-width: 800px;
+        min-width: 700px;
+        height: 95%;
+        min-height: 450px;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .left {
+        float: left;
+        width: 350px;
+        min-height: 350px;
+        text-align: center;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .right {
+        float: left;
+        margin: 0 5px;
+        max-width: 450px;
+        min-width: 300px;
+        min-height: 350px;
+        position: relative;
+        top: 43%;
+        transform: translateY(-50%);
+    }
+    footer {
+        clear: both;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+    .copyright {
+        clear: both;
+        font-size: 13px;
+        text-align: center;
+    }
 }
 
+@media screen and (max-width: 768px) {
+    .page {
+        margin: 0 auto;
+        width: 90%;
+    }
+    .left {
+        margin: 40px auto 0 auto;
+        width: 90%;
+        text-align: center;
+    }
+    .right {
+        margin: 0 auto;
+        width: 90%;
+    }
+    footer {
+        width: 100%;
+        margin: 30px auto 10px auto;
+    }
+    .copyright {
+        font-size: 13px;
+        text-align: center;
+    }
+}
 /* 見出し */
 h1 {
     color: #222222;
@@ -78,13 +105,17 @@ a:link, a:visited {
 a:hover {
     color: #999;
 }
+
 /* 画像 */
 .left img {
     border: 6px solid #333;
     border-radius: 50%;
+    max-width: 100%;
+    height: auto;
 }
 
 /* メニュー周り */
+/* 結局使ってないけど置いておく */
 nav ul {
     overflow: hidden;
     margin: 15px 0 20px 0;
@@ -114,6 +145,7 @@ nav a {
 nav a:hover {
     background: #ccc;
 }
+
 /* Description Listの設定 */
 .right dl {
     padding-left: 15px;
@@ -126,21 +158,24 @@ nav a:hover {
 .right dt {
     width: 110px;
 }
+
 /* 右のパラグラフ */
 .right p {
     padding-left: 16px;
     line-height: 1.5em;
 }
+
+/* Font Awesome 関連 */
 .fa-ul {
-    width: 300px;
+    width: 240px;
     margin-left: 43px;
     height: 55px;
     list-style: none outside;
 }
 .fa-ul li {
-    margin: 0 0 5px 0;
+    margin: 0 15px 5px 0;
     float: left;
-    width: 120px;
+    width: 100px;
 }
 .fa-fw {
     width: 1.8em;
@@ -149,10 +184,18 @@ nav a:hover {
     left: -1.5em;
     width: 1.5em;
 }
+
+/* more */
 .more {
     font-size: 13px;
-    margin-left: 155px;
+    margin-left: 40%;
 }
 .more .fa-fw {
     width: 1.3em;
 }
+@media screen and (max-width: 359px) {
+    .more {
+        margin-left: 30%;
+    }
+}
+
