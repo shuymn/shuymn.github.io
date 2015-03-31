@@ -39,8 +39,7 @@ body {
     .right {
         float: left;
         margin: 0 5px;
-        max-width: 450px;
-        min-width: 300px;
+        width: 300px;
         min-height: 350px;
         position: relative;
         top: 45%;
@@ -74,7 +73,7 @@ body {
     }
     .right {
         margin: 0 auto;
-        max-width: 320px;
+        max-width: 300px;
         min-width: 250px;
         width: 90%;
     }
@@ -173,7 +172,7 @@ nav a:hover {
 /* Font Awesome 関連 */
 ul.fa-ul {
     width: 240px;
-    margin: 0 0 0 43px;
+    margin-left: 43px;
     height: 55px;
     list-style: none outside;
 }
