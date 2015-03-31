@@ -23,11 +23,9 @@ body {
         margin: 0 auto;
         max-width: 800px;
         min-width: 700px;
-        height: 95%;
+        height: 100%;
         min-height: 450px;
         position: relative;
-        top: 50%;
-        transform: translateY(-50%);
     }
     .left {
         float: left;
@@ -51,6 +49,7 @@ body {
     footer {
         clear: both;
         position: absolute;
+        margin-bottom: 15px;
         bottom: 0;
         width: 100%;
     }
@@ -69,14 +68,19 @@ body {
     .left {
         margin: 40px auto 0 auto;
         width: 90%;
+        max-width: 350px;
+        min-width: 250px;
         text-align: center;
     }
     .right {
         margin: 0 auto;
+        max-width: 350px;
+        min-width: 250px;
         width: 90%;
     }
     footer {
         width: 100%;
+        min-width: 300px;
         margin: 30px auto 10px auto;
     }
     .copyright {
@@ -84,6 +88,7 @@ body {
         text-align: center;
     }
 }
+
 /* 見出し */
 h1 {
     color: #222222;
@@ -186,15 +191,24 @@ nav a:hover {
 }
 
 /* more */
-.more {
-    font-size: 13px;
-    margin-left: 40%;
-}
 .more .fa-fw {
     width: 1.3em;
 }
+@media screen and (min-width: 769px) {
+}
+.more {
+    font-size: 13px;
+    margin-left: 150px;
+}
+@media screen and (min-width: 360px) {
+    .more {
+        font-size: 13px;
+        margin-left: 40%;
+    }
+}
 @media screen and (max-width: 359px) {
     .more {
+        font-size: 13px;
         margin-left: 30%;
     }
 }
