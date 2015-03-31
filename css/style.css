@@ -200,13 +200,13 @@ nav a:hover {
     font-size: 13px;
     margin-left: 150px;
 }
-@media screen and (min-width: 360px) {
+@media screen and (min-width: 370px) {
     .more {
         font-size: 13px;
         margin-left: 40%;
     }
 }
-@media screen and (max-width: 359px) {
+@media screen and (max-width: 369px) {
     .more {
         font-size: 13px;
         margin-left: 30%;
