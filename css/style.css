@@ -171,16 +171,18 @@ nav a:hover {
 }
 
 /* Font Awesome 関連 */
-.fa-ul {
+ul.fa-ul {
     width: 240px;
     margin-left: 43px;
     height: 55px;
     list-style: none outside;
+    overflow: hidden;
 }
 .fa-ul li {
     margin: 0 15px 5px 0;
     float: left;
     width: 100px;
+    overflow: hidden;
 }
 .fa-fw {
     width: 1.8em;
@@ -188,6 +190,7 @@ nav a:hover {
 .fa-li {
     left: -1.5em;
     width: 1.5em;
+    overflow: hidden;
 }
 
 /* more */
