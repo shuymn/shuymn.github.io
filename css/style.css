@@ -199,13 +199,13 @@ ul.fa-ul {
     font-size: 13px;
     margin-left: 150px;
 }
-@media screen and (min-width: 370px) {
+@media screen and (min-width: 365px) {
     .more {
         font-size: 13px;
         margin-left: 40%;
     }
 }
-@media screen and (max-width: 369px) {
+@media screen and (max-width: 364px) {
     .more {
         font-size: 13px;
         margin-left: 30%;
