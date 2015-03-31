@@ -42,7 +42,7 @@ body {
     min-width: 300px;
     min-height: 350px;
     position: relative;
-    top: 40%;
+    top: 43%;
     transform: translateY(-50%);
 }
 footer {
@@ -60,7 +60,7 @@ footer {
 /* 見出し */
 h1 {
     color: #222222;
-    font-size: 35px;
+    font-size: 30px;
 }
 h2 {
     color: #222222;
@@ -70,10 +70,18 @@ h2 {
     border-bottom: 1px solid #ccc;
 }
 
+/* リンク */
+a:link, a:visited {
+    color: #555;
+    text-decoration: none;
+}
+a:hover {
+    color: #999;
+}
 /* 画像 */
 .left img {
     border: 6px solid #333;
-    border-radius: 25%;
+    border-radius: 50%;
 }
 
 /* メニュー周り */
@@ -108,19 +116,43 @@ nav a:hover {
 }
 /* Description Listの設定 */
 .right dl {
-    padding-left: 25px;
+    padding-left: 15px;
+    line-height: 1.5em;
 }
 .right dt {
     clear: left;
     float: left;
 }
 .right dt {
-    width: 80px;
+    width: 110px;
 }
 /* 右のパラグラフ */
 .right p {
-    padding-left: 25px;
+    padding-left: 16px;
+    line-height: 1.5em;
 }
-h2 + p {
-    padding-left: 20px;
+.fa-ul {
+    width: 300px;
+    margin-left: 43px;
+    height: 55px;
+    list-style: none outside;
+}
+.fa-ul li {
+    margin: 0 0 5px 0;
+    float: left;
+    width: 120px;
+}
+.fa-fw {
+    width: 1.8em;
+}
+.fa-li {
+    left: -1.5em;
+    width: 1.5em;
+}
+.more {
+    font-size: 13px;
+    margin-left: 155px;
+}
+.more .fa-fw {
+    width: 1.3em;
 }
