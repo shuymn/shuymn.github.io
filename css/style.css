@@ -38,7 +38,7 @@ body {
     .right {
         float: left;
         margin: 0 5px;
-        width: 300px;
+        width: 320px;
         min-height: 350px;
         position: relative;
         top: 45%;
@@ -162,7 +162,7 @@ nav a:hover {
     float: left;
 }
 .right dt {
-    width: 110px;
+    width: 120px;
 }
 
 /* 右のパラグラフ */
