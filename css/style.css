@@ -20,29 +20,18 @@ body {
 /* 枠組み */
 @media screen and (min-width: 769px) {
     .page {
-        margin: 0 auto;
-        width: 700px;
+        display: flex;
+        width: 100%;
         height: 100%;
-        min-height: 450px;
-        position: relative;
+        justify-content: center;
+        align-items: center;
     }
     .left {
-        float: left;
-        width: 350px;
-        min-height: 350px;
         text-align: center;
-        position: relative;
-        top: 50%;
-        transform: translateY(-50%);
+        width: 400px;
     }
     .right {
-        float: left;
-        margin: 0 5px;
-        width: 320px;
-        min-height: 350px;
-        position: relative;
-        top: 45%;
-        transform: translateY(-50%);
+        width: 400px;
     }
     footer {
         clear: both;
@@ -67,16 +56,12 @@ body {
         width: 90%;
     }
     .left {
-        margin: 40px auto 0 auto;
+        margin: 40px auto;
         width: 90%;
-        max-width: 350px;
-        min-width: 250px;
         text-align: center;
     }
     .right {
         margin: 0 auto;
-        max-width: 300px;
-        min-width: 250px;
         width: 90%;
     }
     footer {
@@ -99,7 +84,7 @@ h2 {
     color: #222222;
     font-size: 25px;
     margin: 20px 0 15px 0;
-    padding: 0 0 0 15px;
+    padding: 0 0 0 20px;
     border-bottom: 1px solid #ccc;
 }
 
@@ -154,15 +139,19 @@ nav a:hover {
 
 /* Description Listの設定 */
 .right dl {
-    padding-left: 15px;
+    width: 320px;
+    height: 100px;
+    margin: 0 auto;
     line-height: 1.5em;
 }
 .right dt {
+    max-width: 40%;
     clear: left;
     float: left;
 }
-.right dt {
-    width: 120px;
+.right dd {
+    width: 60%;
+    float: right;
 }
 
 /* 右のパラグラフ */
@@ -173,21 +162,21 @@ nav a:hover {
 
 /* Font Awesome 関連 */
 ul.fa-ul {
-    width: 240px;
-    margin-left: 43px;
-    height: 75px;
+    width: 72%;
+    height: 70px;
+    margin-left: auto;
     list-style: none outside;
 }
 .fa-ul li {
-    margin: 0 15px 5px 0;
+    margin: 5px 0 7px 0;
     float: left;
-    width: 100px;
+    width: 110px;
 }
 .fa-fw {
     width: 1.8em;
 }
 .fa-li {
-    left: -1.5em;
+    left: -1.6em;
     width: 1.5em;
 }
 
