@@ -162,7 +162,11 @@ nav a:hover {
 
 /* Font Awesome 関連 */
 ul.fa-ul {
+<<<<<<< HEAD
     width: 320px;
+=======
+    width: 75%;
+>>>>>>> 5674ce5d347e9f85be98e7941706e256b7fadd74
     height: 70px;
     margin-left: 70px;
     list-style: none outside;
